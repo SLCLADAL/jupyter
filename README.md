@@ -1,42 +1,96 @@
-# LADAL Interactive notebooks
+# LADAL Jupyter Notebook Tools
 
-[Launch Notebooks](https://mybinder.org/v2/gh/SLCLADAL/interactive-notebooks-environment/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Finteractive-notebooks%26urlpath%3Dlab%252Ftree%252Finteractive-notebooks%252F%26branch%3Dmain)
+Interactive, browser-based text analysis tools built on Jupyter notebooks.
+No installation of R or any other software required — just click a launch link and start working with your own texts.
 
-This repository holds a series of interactive notebooks to be run on any Binder instance. Click the link above to launch a live instance with everything you need to run these already installed.
+These tools are developed and maintained by the [Language Technology and Data Analysis Laboratory (LADAL)](https://ladal.edu.au) at the University of Queensland.
 
+---
 
-## Contributing
+## How to Use
 
-Dependencies are managed in [the environment repository](https://github.com/SLCLADAL/interactive-notebooks-environment), 
-to ensure that the slow process of rebuilding and installing all of the R
-packages only needs to happen when dependencies change, not on every commit
-to this repository.
+1. Click a launch link in the table below to open a tool in your browser.
+2. Wait for the environment to build (typically 1–3 minutes on first launch; faster on repeat visits).
+3. Once JupyterLab opens, the notebook is ready. Code cells are hidden by default — just use the widgets and click **Run Analysis**.
+4. Upload your files by dragging them into the relevant folder in the left file panel.
+5. Download your results from the **MyOutput** folder.
 
-## Generating a New Notebook Link
+---
 
-Use the [nbgitpuller link generator](https://hub.jupyter.org/nbgitpuller/link.html) to generate links for new notebooks.
+## Launch Options
 
-The parameters you need are:
+| Platform | Who can use it | Login required |
+|---|---|---|
+| **ATAP BinderHub** — Option 1, recommended | Australian & New Zealand university staff and students | Yes — AAF or Tuakiri |
+| **ARDC BinderHub** — Option 2 | Australian & New Zealand university staff and students | Yes — AAF or Tuakiri |
+| **MyBinder.org** — Option 3 | Everyone worldwide | No |
+| **GESIS BinderHub** — Option 4 | Everyone worldwide | No |
 
-BinderHub URL
+---
 
-  - https://mybinder.org OR
-  - https://binderhub.atap-binder.cloud.edu.au/
+## Tools
 
-Git *Environment* Repository URL and Branch - note that the base environment is where the dependencies live, the content is copied from the interactive-notebooks environment on top of this.
-  
-  - https://github.com/SLCLADAL/interactive-notebooks-environment
-  - main
+| Tool | Description | ATAP 🔒 | ARDC 🔒 | MyBinder 🌐 | GESIS 🌐 |
+|---|---|---|---|---|---|
+| 🔍 Concordance Explorer | KWIC concordances — find any word or phrase in context | [ATAP](https://binderhub.atap-binder.cloud.edu.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fconcordance_explorer.ipynb%26branch%3Dmain) | [ARDC](https://binderhub.rc.nectar.org.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fconcordance_explorer.ipynb%26branch%3Dmain) | [MyBinder](https://mybinder.org/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fconcordance_explorer.ipynb%26branch%3Dmain) | [GESIS](https://notebooks.gesis.org/binder/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fconcordance_explorer.ipynb%26branch%3Dmain) |
+| 🔗 Collocation Analyser | Association measures showing which words attract each other | [ATAP](https://binderhub.atap-binder.cloud.edu.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fcollocation_analyser.ipynb%26branch%3Dmain) | [ARDC](https://binderhub.rc.nectar.org.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fcollocation_analyser.ipynb%26branch%3Dmain) | [MyBinder](https://mybinder.org/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fcollocation_analyser.ipynb%26branch%3Dmain) | [GESIS](https://notebooks.gesis.org/binder/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fcollocation_analyser.ipynb%26branch%3Dmain) |
+| 🔑 Keyword Finder | Over- and under-represented words vs. a reference corpus | [ATAP](https://binderhub.atap-binder.cloud.edu.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fkeyword_finder.ipynb%26branch%3Dmain) | [ARDC](https://binderhub.rc.nectar.org.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fkeyword_finder.ipynb%26branch%3Dmain) | [MyBinder](https://mybinder.org/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fkeyword_finder.ipynb%26branch%3Dmain) | [GESIS](https://notebooks.gesis.org/binder/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fkeyword_finder.ipynb%26branch%3Dmain) |
+| 🏷️ Part-of-Speech Tagger | Part-of-speech (POS) tagging and dependency parsing in 65+ languages | [ATAP](https://binderhub.atap-binder.cloud.edu.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fpos_tagger.ipynb%26branch%3Dmain) | [ARDC](https://binderhub.rc.nectar.org.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fpos_tagger.ipynb%26branch%3Dmain) | [MyBinder](https://mybinder.org/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fpos_tagger.ipynb%26branch%3Dmain) | [GESIS](https://notebooks.gesis.org/binder/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fpos_tagger.ipynb%26branch%3Dmain) |
+| 🧹 Text Cleaner | Remove or replace words, tags, URLs, and patterns | [ATAP](https://binderhub.atap-binder.cloud.edu.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Ftext_cleaner.ipynb%26branch%3Dmain) | [ARDC](https://binderhub.rc.nectar.org.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Ftext_cleaner.ipynb%26branch%3Dmain) | [MyBinder](https://mybinder.org/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Ftext_cleaner.ipynb%26branch%3Dmain) | [GESIS](https://notebooks.gesis.org/binder/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Ftext_cleaner.ipynb%26branch%3Dmain) |
+| 🕸️ Network Visualiser | Network graphs from structured edge-list data | [ATAP](https://binderhub.atap-binder.cloud.edu.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fnetwork_visualiser.ipynb%26branch%3Dmain) | [ARDC](https://binderhub.rc.nectar.org.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fnetwork_visualiser.ipynb%26branch%3Dmain) | [MyBinder](https://mybinder.org/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fnetwork_visualiser.ipynb%26branch%3Dmain) | [GESIS](https://notebooks.gesis.org/binder/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fnetwork_visualiser.ipynb%26branch%3Dmain) |
+| 📊 Topic Explorer | LDA topic discovery across text collections | [ATAP](https://binderhub.atap-binder.cloud.edu.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Ftopic_explorer.ipynb%26branch%3Dmain) | [ARDC](https://binderhub.rc.nectar.org.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Ftopic_explorer.ipynb%26branch%3Dmain) | [MyBinder](https://mybinder.org/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Ftopic_explorer.ipynb%26branch%3Dmain) | [GESIS](https://notebooks.gesis.org/binder/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Ftopic_explorer.ipynb%26branch%3Dmain) |
+| 💬 Sentiment Explorer | Polarity scoring and eight basic emotion categories (NRC lexicon) | [ATAP](https://binderhub.atap-binder.cloud.edu.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fsentiment_explorer.ipynb%26branch%3Dmain) | [ARDC](https://binderhub.rc.nectar.org.au/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fsentiment_explorer.ipynb%26branch%3Dmain) | [MyBinder](https://mybinder.org/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fsentiment_explorer.ipynb%26branch%3Dmain) | [GESIS](https://notebooks.gesis.org/binder/v2/gh/SLCLADAL/jupyter-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FSLCLADAL%252Fjupyter%26urlpath%3Dlab%252Ftree%252Fjupyter%252Fnotebooks%252Fsentiment_explorer.ipynb%26branch%3Dmain) |
 
-Git *Content* Repository URL and Branch
+---
 
-  - https://github.com/SLCLADAL/interactive-notebooks
-  - main
+## Repository Structure
 
-File to Open - this is the path in the *content* repository
+```
+jupyter/
+├── notebooks/
+│   ├── concordance_explorer.ipynb   # Concordance Explorer
+│   ├── collocation_analyser.ipynb   # Collocation Analyser
+│   ├── keyword_finder.ipynb         # Keyword Finder
+│   ├── pos_tagger.ipynb             # Part-of-Speech Tagger
+│   ├── text_cleaner.ipynb           # Text Cleaner
+│   ├── network_visualiser.ipynb     # Network Visualiser
+│   ├── topic_explorer.ipynb         # Topic Explorer
+│   ├── sentiment_explorer.ipynb     # Sentiment Explorer
+│   ├── MyTexts/                     # Upload plain-text files here
+│   ├── Target/                      # Target corpus (Keyword Finder only)
+│   ├── Reference/                   # Reference corpus (Keyword Finder only)
+│   ├── MyTables/                    # Excel edge-list (Network Visualiser only)
+│   └── MyOutput/                    # Download results from here
+└── .Rprofile                        # Disables renv auto-activation
+```
 
-  - notebooks/<whatever>.ipynb
+---
 
-Application to Open
+## Environment
 
-  - JupyterLab
+The R package environment is managed separately in [SLCLADAL/jupyter-env](https://github.com/SLCLADAL/jupyter-env).
+This separation means that updating notebook content does not trigger a full environment rebuild on Binder, keeping launch times short.
+
+---
+
+## Generating New Launch Links
+
+Use the [nbgitpuller link generator](https://hub.jupyter.org/nbgitpuller/link.html) with these settings:
+
+- **BinderHub URL**: one of the four platforms above
+- **Environment repo**: `https://github.com/SLCLADAL/jupyter-env` (branch: `main`)
+- **Content repo**: `https://github.com/SLCLADAL/jupyter` (branch: `main`)
+- **File to open**: `notebooks/<filename>.ipynb`
+- **Application**: JupyterLab
+
+---
+
+## Citation
+
+Schweinberger, Martin. (2025). *LADAL Interactive Notebook Tools*. Brisbane: The University of Queensland. <https://ladal.edu.au/tools.html>
+
+---
+
+## License
+
+[MIT License](LICENSE) — © 2025 The University of Queensland / LADAL

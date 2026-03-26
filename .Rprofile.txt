@@ -1,0 +1,2 @@
+# Disable renv auto-activation — packages managed by jupyter-env/install.R
+if (requireNamespace("renv", quietly = TRUE)) renv::deactivate()
